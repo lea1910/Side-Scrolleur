@@ -14,8 +14,8 @@ public class EntityController : MonoBehaviour
     {
         inputAsset.FindAction("gameplay/jump").started += HandleJump;
 
-        inputAsset.FindAction("gameplay/move").performed += Handelemove;
-        inputAsset.FindAction("gameplay/move").canceled += Handelemove;
+        inputAsset.FindAction("gameplay/move").performed += HandeleMove;
+        inputAsset.FindAction("gameplay/move").canceled += HandeleMove;
 
         inputAsset.Enable();
     }
@@ -24,8 +24,8 @@ public class EntityController : MonoBehaviour
     {
         inputAsset.FindAction("gameplay/move").started -= HandleJump;
 
-        inputAsset.FindAction("gameplay/move").performed -= Handelemove;
-        inputAsset.FindAction("gameplay/move").canceled -= Handelemove;
+        inputAsset.FindAction("gameplay/move").performed -= HandeleMove;
+        inputAsset.FindAction("gameplay/move").canceled -= HandeleMove;
 
         inputAsset.Disable();
     }
@@ -40,7 +40,7 @@ public class EntityController : MonoBehaviour
         Debug.Log($"JUMP: Phase = {ctx.phase}");
     }
 
-    private void Handelemove(InputAction.CallbackContext ctx)
+    private void HandeleMove(InputAction.CallbackContext ctx)
     {
         _axis = ctx.ReadValue<float>();
         Debug.Log($"Move: Phase = {ctx.phase}, Axis = {_axis}");
