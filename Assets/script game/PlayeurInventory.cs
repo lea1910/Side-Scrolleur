@@ -5,6 +5,7 @@ public class PlayerInventory : MonoBehaviour
 {
     public int itemCount = 0; // Nombre d'objets collectés
     public TextMeshProUGUI itemText; // Référence vers le texte UI
+    public int keyCount;
 
     void Start()
     {

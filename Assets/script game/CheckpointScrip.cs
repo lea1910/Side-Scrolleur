@@ -6,10 +6,12 @@ using UnityEngine;
 public class CheckpointScrip : MonoBehaviour
 {
     private RespawnScript respawn;
+    private BoxCollider2D checkPointCollider;
 
     void Awake()
     {
-        respawn = GameObject.FindGameObjectWithTag("Respaw").GetComponent<RespawnScript>();
+        checkPointCollider = GetComponent<BoxCollider2D>();
+        respawn = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
     }
 
     // Start is called before the first frame update
@@ -25,9 +27,10 @@ public class CheckpointScrip : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     { 
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             respawn.respawnPoint = this.gameObject;
+            checkPointCollider.enabled = false;
         }
     }
 }

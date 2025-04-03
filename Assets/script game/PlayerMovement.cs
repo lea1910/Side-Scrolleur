@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 7f;
     private float _axis = 0;
     private Rigidbody2D rb;
+    public GameObject zonz;
+    public LayerMask terrain;
+    public bool GroundCheck;
 
     void Start()
     {
@@ -18,8 +21,12 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnJump()
     {
-        
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+      
+
+        if (GroundCheck) 
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
     }
     void Update()
     {
@@ -27,25 +34,9 @@ public class PlayerMovement : MonoBehaviour
        
         rb.velocity = new Vector2(_axis * speed, rb.velocity.y);
 
-        ////saut
-        //if (InputGetKeyDown(KeyCode.Space)&& isGrounded)
-        //{
-        //    rb.velocity = new Vector2(rb.velocity.x, jumpFo rce);
-        //}   
+        GroundCheck = Physics2D.Raycast(zonz.transform.position, Vector2.down, 0.1f, terrain);
+
     }
 
-    //    void OnCollisionEnter2d(Collision2D collision)
-    //    {
-    //        if (collision.gameObject.CompareTag("Ground"))
-    //        {
-    //            isGrounded = true;
-    //        }
-    //    }
-    //    void OnCollisionExit2D(Collision2D collision)
-    //    {
-    //        if (collision.gameObject.CompareTag("Ground"))
-    //        {
-    //            isGrounded = false;
-    //        }
-    //    }
+
 }
