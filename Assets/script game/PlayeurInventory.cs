@@ -1,11 +1,11 @@
-using UnityEngine;
-using TMPro; // Nécessaire pour gérer le texte UI
+ï»¿using UnityEngine;
+using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public int itemCount = 0; // Nombre d'objets collectés
-    public TextMeshProUGUI itemText; // Référence vers le texte UI
-    public int keyCount;
+    public int itemCount = 0;
+    public int keyCount = 0; // ðŸ”‘ Nombre de clÃ©s collectÃ©es
+    public TextMeshProUGUI itemText;
 
     void Start()
     {
@@ -18,12 +18,18 @@ public class PlayerInventory : MonoBehaviour
         UpdateUI();
     }
 
+    public void CollectKey()
+    {
+        keyCount++;
+        Debug.Log("ClÃ© collectÃ©e ! Total : " + keyCount);
+        UpdateUI();
+    }
+
     void UpdateUI()
     {
         if (itemText != null)
         {
-            itemText.text = "Objets : " + itemCount;
+            itemText.text = "Objets : " + itemCount + " | ClÃ©s : " + keyCount;
         }
     }
 }
-

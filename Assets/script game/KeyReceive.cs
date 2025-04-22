@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class KeyReceiver : MonoBehaviour
 {
-    public int requiredKeys = 3; // Nombre de clés nécessaires
+    public int requiredKeys = 2; // Nombre de clés nécessaires
     private PlayerInventory playerInventory; // Référence au joueur
 
     void Start()
