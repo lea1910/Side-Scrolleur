@@ -3,8 +3,7 @@ using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public int itemCount = 0;
-    public int keyCount = 0; // 🔑 Nombre de clés collectées
+    public int keyCount = 0; //  Nombre de clés collectées
     public TextMeshProUGUI itemText;
 
     void Start()
@@ -12,11 +11,6 @@ public class PlayerInventory : MonoBehaviour
         UpdateUI();
     }
 
-    public void CollectItem()
-    {
-        itemCount++;
-        UpdateUI();
-    }
 
     public void CollectKey()
     {
@@ -25,11 +19,11 @@ public class PlayerInventory : MonoBehaviour
         UpdateUI();
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
         if (itemText != null)
         {
-            itemText.text = "Objets : " + itemCount + " | Clés : " + keyCount;
+            itemText.text = "Objets : " + keyCount;
         }
     }
 }

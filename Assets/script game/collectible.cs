@@ -18,7 +18,7 @@ public class Collectible : MonoBehaviour
             PlayerInventory inventory = collision.GetComponent<PlayerInventory>();
             if (inventory != null)
             {
-                inventory.CollectItem();
+                inventory.CollectKey();
             }
 
             // Détruire l'objet

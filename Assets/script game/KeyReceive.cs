@@ -1,9 +1,11 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class KeyReceiver : MonoBehaviour
 {
-    public int requiredKeys = 2; // Nombre de clés nécessaires
-    private PlayerInventory playerInventory; // Référence au joueur
+    public int requiredKeys = 5; // Nombre de clés nécessaires
+    private PlayerInventory _playerInventory; // Référence au joueur
+    public GameObject _porte; 
 
     void Start()
     {
@@ -11,18 +13,19 @@ public class KeyReceiver : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
-            playerInventory = player.GetComponent<PlayerInventory>();
+            _playerInventory = player.GetComponent<PlayerInventory>();
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && playerInventory != null)
+        if (collision.CompareTag("Player") && _playerInventory != null)
         {
-            if (playerInventory.keyCount >= requiredKeys)
+            if (_playerInventory.keyCount >= requiredKeys)
             {
-                playerInventory.keyCount -= requiredKeys; // Utiliser les clés
+                _playerInventory.keyCount -= requiredKeys; // Utiliser les clés
                 Debug.Log("Accès autorisé ! Action déclenchée.");
+                _porte.SetActive(false);
                 // Ici, ajoute l'action (ouvrir une porte, activer un mécanisme, etc.)
             }
             else
@@ -32,4 +35,3 @@ public class KeyReceiver : MonoBehaviour
         }
     }
 }
-
