@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Enemy
   - Region
+  - Teleport
   layers:
   - Default
   - TransparentFX
