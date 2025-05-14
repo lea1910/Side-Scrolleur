@@ -8,7 +8,7 @@ public class Fader : MonoBehaviour
 
     private void Start()
     {
-        Canva1.SetActive(false);
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
