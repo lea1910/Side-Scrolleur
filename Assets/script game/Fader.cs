@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Fader : MonoBehaviour
 {
-    public GameObject Canva1;
+    public GameObject Canva;
 
     private void Start()
     {
@@ -13,11 +13,8 @@ public class Fader : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (CompareTag("Player"))
-            Canva1.SetActive(true);
+            Canva.SetActive(true);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        Canva1?.SetActive(false);
-    }
+    private void OnTriggerExit2D(Collider2D collision) => Canva.SetActive(false);
 }
