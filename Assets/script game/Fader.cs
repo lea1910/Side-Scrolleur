@@ -16,5 +16,5 @@ public class Fader : MonoBehaviour
             Canva.SetActive(true);
     }
 
-    private void OnTriggerExit2D(Collider2D collision) => Canva.SetActive(false);
+    private void OnTriggerExit2D(Collider2D collision) => Canva.SetActive(true);
 }
