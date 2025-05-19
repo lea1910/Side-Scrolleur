@@ -5,15 +5,16 @@ using UnityEngine;
 public class Fader : MonoBehaviour
 {
     public GameObject Canva;
+    public Animator _animator;
+    public GameObject player;
 
-    private void Start()
-    {
-
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (CompareTag("Player"))
             Canva.SetActive(true);
+            player.SetActive(false);
+            _animator.SetTrigger("Fade");
+
     }
 
     private void OnTriggerExit2D(Collider2D collision) => Canva.SetActive(true);

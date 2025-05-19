@@ -16,6 +16,6 @@ public class TransitionFade : MonoBehaviour
     // Update is called once per frame
     public void Fade()
     {
-        _animator.Play("Fade");
+        _animator.SetTrigger("Fade");
     }
 }
