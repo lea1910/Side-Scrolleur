@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
@@ -10,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject zonz;
     public LayerMask terrain;
     public bool GroundCheck;
+    public float minX = -20.5f;
+    public Animator animator;
+    private float _visibleAxis;
 
     void Start()
     {
@@ -18,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
     private void OnMove(InputValue value)
     {
         _axis = value.Get<float>();
+        if (_axis !=0)
+        {
+            _visibleAxis = _axis;
+        }
+        animator.SetBool("isGoingRight", _visibleAxis > 0);
     }
     private void OnJump()
     {
@@ -36,6 +45,9 @@ public class PlayerMovement : MonoBehaviour
 
         GroundCheck = Physics2D.Raycast(zonz.transform.position, Vector2.down, 0.1f, terrain);
 
+        Vector3 position = transform.position;
+        position.x = Mathf.Max(position.x, minX);
+        transform.position = position;
     }
 
 
