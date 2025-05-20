@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4356762209626012417}
   - component: {fileID: 8926772671867342804}
   - component: {fileID: 9153841838486717684}
-  m_Layer: 0
-  m_Name: 'sol plateforme '
+  m_Layer: 6
+  m_Name: sol plateforme
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

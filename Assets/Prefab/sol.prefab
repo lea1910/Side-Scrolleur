@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7763121326805751907}
   - component: {fileID: 3226837768136552814}
   - component: {fileID: 1120532049864928100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sol
   m_TagString: Ground
   m_Icon: {fileID: 0}

@@ -126,8 +126,8 @@ TextureImporter:
       name: marche personage3_0
       rect:
         serializedVersion: 2
-        x: 60
-        y: 878
+        x: 44
+        y: 877
         width: 126
         height: 248
       alignment: 7
@@ -168,8 +168,8 @@ TextureImporter:
       name: marche personage3_2
       rect:
         serializedVersion: 2
-        x: 541
-        y: 877
+        x: 511
+        y: 875
         width: 126
         height: 248
       alignment: 7
@@ -189,7 +189,7 @@ TextureImporter:
       name: marche personage3_3
       rect:
         serializedVersion: 2
-        x: 781
+        x: 763
         y: 876
         width: 126
         height: 248
@@ -210,7 +210,7 @@ TextureImporter:
       name: marche personage3_4
       rect:
         serializedVersion: 2
-        x: 1021
+        x: 1010
         y: 876
         width: 126
         height: 248
@@ -252,8 +252,8 @@ TextureImporter:
       name: marche personage3_6
       rect:
         serializedVersion: 2
-        x: 1501
-        y: 876
+        x: 1470
+        y: 875
         width: 126
         height: 248
       alignment: 7
@@ -273,7 +273,7 @@ TextureImporter:
       name: marche personage3_7
       rect:
         serializedVersion: 2
-        x: 1741
+        x: 1725
         y: 876
         width: 126
         height: 248
@@ -294,8 +294,8 @@ TextureImporter:
       name: marche personage3_8
       rect:
         serializedVersion: 2
-        x: 80
-        y: 280
+        x: 58
+        y: 278
         width: 126
         height: 248
       alignment: 7
@@ -315,8 +315,8 @@ TextureImporter:
       name: marche personage3_9
       rect:
         serializedVersion: 2
-        x: 302
-        y: 281
+        x: 308
+        y: 279
         width: 126
         height: 248
       alignment: 7
@@ -357,8 +357,8 @@ TextureImporter:
       name: marche personage3_11
       rect:
         serializedVersion: 2
-        x: 798
-        y: 282
+        x: 783
+        y: 281
         width: 126
         height: 248
       alignment: 7
@@ -378,8 +378,8 @@ TextureImporter:
       name: marche personage3_12
       rect:
         serializedVersion: 2
-        x: 1031
-        y: 282
+        x: 1011
+        y: 280
         width: 126
         height: 248
       alignment: 7
@@ -399,8 +399,8 @@ TextureImporter:
       name: marche personage3_13
       rect:
         serializedVersion: 2
-        x: 1233
-        y: 281
+        x: 1242
+        y: 279
         width: 126
         height: 248
       alignment: 7
@@ -420,8 +420,8 @@ TextureImporter:
       name: marche personage3_14
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 281
+        x: 1491
+        y: 280
         width: 126
         height: 248
       alignment: 7
@@ -441,8 +441,8 @@ TextureImporter:
       name: marche personage3_15
       rect:
         serializedVersion: 2
-        x: 1741
-        y: 280
+        x: 1724
+        y: 279
         width: 126
         height: 248
       alignment: 7

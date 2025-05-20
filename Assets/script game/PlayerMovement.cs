@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float minX = -20.5f;
     public Animator animator;
     private float _visibleAxis;
-
+   
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(_axis * speed, rb.velocity.y);
 
         GroundCheck = Physics2D.Raycast(zonz.transform.position, Vector2.down, 0.1f, terrain);
+        Debug.Log(GroundCheck);
+        Debug.DrawRay(zonz.transform.position, Vector2.down, Color.blue);
 
         Vector3 position = transform.position;
         position.x = Mathf.Max(position.x, minX);
