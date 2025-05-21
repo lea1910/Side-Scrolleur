@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1326874548858141589}
   - component: {fileID: 8911741860111136239}
   - component: {fileID: 2289420659735451915}
+  - component: {fileID: 1060305415636894223}
   m_Layer: 0
   m_Name: graphics
   m_TagString: Enemy
@@ -149,6 +150,21 @@ MonoBehaviour:
   - {fileID: 727496793567118652}
   - {fileID: 952310704609597749}
   respawn: {fileID: 0}
+--- !u!111 &1060305415636894223
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603653459768084663}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1658026831025188060
 GameObject:
   m_ObjectHideFlags: 0

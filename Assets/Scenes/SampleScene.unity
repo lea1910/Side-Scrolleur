@@ -746,7 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  jumpForce: 7.19
+  jumpForce: 7.67
   zonz: {fileID: 1638869735}
   terrain:
     serializedVersion: 2
@@ -814,7 +814,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 6200000, guid: 6ab548dbd69b13643a09ff76c3985817, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3233,11 +3233,68 @@ Transform:
   - {fileID: 1567977130}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &712477974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6783372123513581266, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
+  m_PrefabInstance: {fileID: 5106451742711289514}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &713792513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 86415587360574030, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
   m_PrefabInstance: {fileID: 5106451742711289514}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &713792514
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712477974}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &737875820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6518,7 +6575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 646193781}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.4
 --- !u!212 &1669584994
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8364,7 +8421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 646193781}
-  parallaxEffect: 0.7
+  parallaxEffect: 0.5
 --- !u!212 &2133275168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8858,6 +8915,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1060305415636894223, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 0f1a753fca30b09448c5e755e79b162e, type: 2}
+    - target: {fileID: 1060305415636894223, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060305415636894223, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 0f1a753fca30b09448c5e755e79b162e, type: 2}
     - target: {fileID: 2289420659735451915, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
       propertyPath: respawn
       value: 
@@ -8866,10 +8935,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ennemi
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1060305415636894223, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6783372123513581266, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 713792514}
   m_SourcePrefab: {fileID: 100100000, guid: 748e75a80c21880499a4239a45627dbf, type: 3}
 --- !u!1001 &6124028135351425323
 PrefabInstance:
