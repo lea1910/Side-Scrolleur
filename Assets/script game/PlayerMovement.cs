@@ -22,11 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnMove(InputValue value)
     {
         _axis = value.Get<float>();
-        if (_axis !=0)
-        {
-            _visibleAxis = _axis;
-        }
-        animator.SetBool("isGoingRight", _visibleAxis > 0);
+       
     }
     private void OnJump()
     {
@@ -39,8 +35,16 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+        if (GroundCheck)
+        {
+            animator.SetBool("grounded", true);
+        }
+        else
+        {
+            animator.SetBool("grounded", false);
+        }
         //deplacement horizontal
-       
+
         rb.velocity = new Vector2(_axis * speed, rb.velocity.y);
 
         GroundCheck = Physics2D.Raycast(zonz.transform.position, Vector2.down, 0.1f, terrain);
@@ -50,6 +54,13 @@ public class PlayerMovement : MonoBehaviour
         Vector3 position = transform.position;
         position.x = Mathf.Max(position.x, minX);
         transform.position = position;
+
+        if (_axis != 0)
+        {
+            _visibleAxis = _axis;
+        }
+        animator.SetBool("isGoingRight", _visibleAxis > 0);
+        animator.SetBool("nomove", _axis == 0);
     }
 
 
