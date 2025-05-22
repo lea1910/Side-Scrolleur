@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject zonz;
     public LayerMask terrain;
     public bool GroundCheck;
-    public float minX = -20.5f;
+    public float minX = -15.612f;
     public Animator animator;
     private float _visibleAxis;
    
