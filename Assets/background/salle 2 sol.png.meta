@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c5deb59810ab43a4f83576f206b6d1ce
+guid: 727ac63583427c246bf49b22d32c9956
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,106 +123,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sol_-1
+      name: salle 2 sol_0
       rect:
         serializedVersion: 2
-        x: 650
-        y: 630
-        width: 299
-        height: 254
+        x: 0
+        y: 0
+        width: 1920
+        height: 227
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 191b8112a3720dc46b60a02548651999
-      internalID: 456242733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sol_1-
-      rect:
-        serializedVersion: 2
-        x: 1251
-        y: 642
-        width: 299
-        height: 254
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1be0443843e3c14a8b53c3d50ba96f9
-      internalID: 681789379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sol_bord_g
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 312
-        width: 299
-        height: 254
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 643fc38c7426a1649a034985eb91869c
-      internalID: 1582397138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sol_1_
-      rect:
-        serializedVersion: 2
-        x: 949
-        y: 312
-        width: 299
-        height: 254
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05529a4494e5fdd4e8cc93bd82178df4
-      internalID: -1555578457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sol_bord_d
-      rect:
-        serializedVersion: 2
-        x: 1423
-        y: 184
-        width: 299
-        height: 254
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1cbf76454898a24086823eb83da6525
-      internalID: 1489293586
+      spriteID: e1debd8876e4bdc418d3fc7da0623ba0
+      internalID: 1957696886
       vertices: []
       indices: 
       edges: []
@@ -238,20 +154,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sol_-1: 456242733
-      sol_1-: 681789379
-      sol_10: 559210883
-      sol_11: -130921102
-      sol_12: -1101483158
-      sol_13: 172704864
-      sol_1_: -1555578457
-      sol_2: -198959492
-      sol_5: 787230246
-      sol_6: 1486126530
-      sol_7: 1103999814
-      sol_9: 1591483432
-      sol_bord_d: 1489293586
-      sol_bord_g: 1582397138
+      salle 2 sol_0: 1957696886
+      salle 2 sol_1: 2139488608
+      salle 2 sol_2: 748486684
+      salle 2 sol_3: 253058767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
