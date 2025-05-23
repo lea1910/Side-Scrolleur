@@ -179,7 +179,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "blabla \nbli\nblo\nblu \nbla \ngla \nglu \nblu\ngeyg\nekjfh\n"
+  m_text: "The Last Seal \nJeu r\xE9alis\xE9 par L\xE9a Meynadier\n\nD\xE9veloppement
+    & Progammation,   \nL\xE9a Meynadier, Youtube, IA\n\nDirection artistique & design,Animations
+    & visuels\nL\xE9a\n\nMusique \nDaniel Herrera\nTHE WAIT, Vanishing\n\nRemerciements
+    \n- A l'equipe p\xE9dagogique \n-Anthony, Aur\xE9lie, Hugo, Ne\xEFla ,Matro \n\nMerci
+    d'avoir jou\xE9 :)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -206,8 +210,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
